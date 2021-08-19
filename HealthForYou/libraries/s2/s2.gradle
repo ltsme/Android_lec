@@ -1,0 +1,29 @@
+evaluationDependsOn(':libraries')
+
+android {
+    productFlavors {
+        lite {
+            dimension "adid"
+        }
+
+        full {
+            dimension "adid"
+        }
+    }
+}
+dependencies {
+    fullCompile ('com.google.android.gms:play-services-ads:7.8.0') {
+        exclude module: 'support-v4'
+    }
+
+    testCompile ('com.google.android.gms:play-services-ads:7.8.0') {
+        exclude module: 'support-v4'
+    }
+
+    releaseCompile project(path: ':libraries:network', configuration: 'release')
+    debugCompile project(path: ':libraries:network', configuration: 'debug')
+}
+
+project.afterEvaluate {
+    publish.shouldRunAfter ':libraries:network:publish'
+}

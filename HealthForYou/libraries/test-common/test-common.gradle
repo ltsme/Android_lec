@@ -1,0 +1,9 @@
+evaluationDependsOn(':libraries')
+
+dependencies {
+    compile "junit:junit:$JUNIT_VERSION"
+    compile "org.robolectric:robolectric:$ROBOLECTRIC_VERSION"
+    compile "org.robolectric:shadows-support-v4:$ROBOLECTRIC_VERSION"
+    compile "org.mockito:mockito-core:$MOCKITO_VERSION"
+    compile "org.hamcrest:hamcrest-library:$HAMCREST_VERSION"
+}

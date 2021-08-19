@@ -1,0 +1,50 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="TypographyDashes">
+    <string name="app_name">healthForyou</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_splash">SplashActivity</string>
+
+    <string name="kakao_app_key">8be45c7d03f28138c3f0b1b1481534c0</string>
+
+    <string name="facebook_app_id">462631720770505</string>
+    <string name="fb_login_protocol_scheme">fb462631720770505</string>
+    <string name="facePPG">얼굴을 통한 맥박 측정</string>
+    <string-array name="sex">
+        <item>남성</item>
+        <item>여성</item>
+    </string-array>
+
+    <string-array name="age">
+        <item>10-19</item>
+        <item>20-29</item>
+        <item>30-39</item>
+        <item>40-49</item>
+        <item>50-59</item>
+        <item>60-69</item>
+        <item>70-79</item>
+        <item>80-89</item>
+        <item>90-99</item>
+    </string-array>
+    <string name="title_activity_test">test</string>
+    <string name="ruleforuse1">본 어플을 통해 측정된 심박수와  특정 조건에서 신뢰도가 높다할 지라도 결코 의료진단용으로 사용되어서는 안됩니다.</string>
+    <string name="ruleforuse2">본 어플이 제공하는 안정시 심박수 점검기능은 성인의 표준 심박수 범위와 비교하는 데만 목적을 두고 있습니다.</string>
+    <string name="ruleforuse3">전반적인 건강상태를 검사받고자 하는 경우에는 의사에게 문의하시기 바랍니다.</string>
+
+
+    <string name="quickstart_message">Click the SUBSCRIBE TO NEWS button below to subscribe to the
+    news topic. Messages sent to the news topic will be received. The LOG TOKEN button logs the
+    InstanceID token to logcat.</string>
+    <string name="subscribe_to_news">Subscribe To News</string>
+    <string name="log_token">Log Token</string>
+
+    <string name="msg_subscribed">Subscribed to news topic</string>
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <!--
+        This is the name that users will see when interacting with this channel.
+        It should describe the category of notifications that will be sent through this channel
+     -->
+    <string name="default_notification_channel_name" translatable="true">News</string>
+    <string name="title_activity_choose_datasigndate">chooseDatasigndate</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+</resources>

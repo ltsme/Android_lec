@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/frag_container_"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"></FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="53sp"
+        android:layout_alignParentBottom="true"
+        android:padding="3sp"
+        android:layout_gravity="center_vertical"
+        android:background="#d6d7d7"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_frag1_main"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="0dp"
+            android:drawableTop="@drawable/home"
+            android:gravity="center"
+            android:background="#00000000"
+            android:text="메인"
+            android:textSize="8sp" />
+
+        <Button
+            android:id="@+id/btn_frag2_chat"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="0dp"
+            android:drawableTop="@drawable/rotate"
+            android:background="#00000000"
+            android:text="헬스톡"
+            android:textSize="8sp" />
+
+        <Button
+            android:id="@+id/btn_frag3_meas"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="0dp"
+            android:drawableTop="@drawable/electrocardiogram"
+            android:background="#00000000"
+            android:text="측정"
+            android:textSize="8sp" />
+
+        <Button
+            android:id="@+id/btn_frag4_result"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="0dp"
+            android:drawableTop="@drawable/list"
+            android:background="#00000000"
+            android:text="측정결과"
+            android:textSize="8sp" />
+    </LinearLayout>
+
+</LinearLayout>

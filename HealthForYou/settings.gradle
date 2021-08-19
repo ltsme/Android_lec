@@ -1,0 +1,2 @@
+include ':app', ':libraries:test-common', ':libraries:kakaotalk', ':applications:kakao-open-android-navi-sample', ':libraries:friends', ':libraries:push', ':libraries:network', ':libraries:kakaostory', ':libraries:s2', ':applications:kakao-open-android-sdk-sample', ':libraries:kakaolink', ':applications:kakao-open-android-link-sample', ':libraries:message-template', ':libraries:usermgmt', ':applications:kakao-open-android-s2-sample', ':libraries:kakaonavi', ':libraries:auth', ':libraries:util', ':dlib'
+include ':openCVLibrary320'

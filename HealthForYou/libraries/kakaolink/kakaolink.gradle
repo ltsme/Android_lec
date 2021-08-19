@@ -1,0 +1,13 @@
+evaluationDependsOn(':libraries')
+
+dependencies {
+    debugCompile project(path: ':libraries:network', configuration: 'debug')
+    releaseCompile project(path: ':libraries:network', configuration: 'release')
+
+    debugCompile project(path: ':libraries:message-template', configuration: 'debug')
+    releaseCompile project(path: ':libraries:message-template', configuration: 'release')
+}
+
+project.afterEvaluate {
+    publish.shouldRunAfter ':libraries:network:publish'
+}

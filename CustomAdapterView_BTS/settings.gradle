@@ -1,0 +1,2 @@
+rootProject.name = "CustomAdapterView_BTS"
+include ':app'

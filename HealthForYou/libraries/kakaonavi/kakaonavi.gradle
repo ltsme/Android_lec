@@ -1,0 +1,12 @@
+evaluationDependsOn(':libraries')
+
+dependencies {
+    releaseCompile project(path: ':libraries:network', configuration: 'release')
+    debugCompile project(path: ':libraries:network', configuration: 'debug')
+
+    compile "com.android.support:appcompat-v7:$ANDROID_SUPPORT_LIB_VERSION"
+}
+
+project.afterEvaluate {
+    publish.shouldRunAfter ':libraries:network:publish'
+}

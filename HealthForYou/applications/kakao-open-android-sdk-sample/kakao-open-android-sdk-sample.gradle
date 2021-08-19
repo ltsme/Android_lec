@@ -1,0 +1,14 @@
+evaluationDependsOn(':applications')
+
+dependencies {
+    compile group: 'com.android.support', name: 'support-v4', version: project.ANDROID_SUPPORT_LIB_VERSION
+    compile project(':libraries:kakaotalk')
+    compile project(':libraries:kakaostory')
+    compile project(':libraries:push')
+
+    compile 'com.mcxiaoke.volley:library:1.0.19'
+    compile "com.android.support:appcompat-v7:$ANDROID_SUPPORT_LIB_VERSION"
+
+    androidTestCompile 'com.android.support.test.uiautomator:uiautomator-v18:2.1.2'
+}
+apply plugin: 'com.google.gms.google-services'

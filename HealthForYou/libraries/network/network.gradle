@@ -1,0 +1,10 @@
+evaluationDependsOn(':libraries')
+
+dependencies {
+    releaseCompile project(path: ':libraries:util', configuration: 'release')
+    debugCompile project(path: ':libraries:util', configuration: 'debug')
+}
+
+project.afterEvaluate {
+    publish.shouldRunAfter ':libraries:util:publish'
+}

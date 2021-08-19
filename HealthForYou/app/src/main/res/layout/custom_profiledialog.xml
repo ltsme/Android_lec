@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:background="#99A5FF">
+
+            <TextView
+                android:id="@+id/tv_dialogname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_dialogprofile"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="190sp"
+                android:text="name"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/tv_dialogemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_dialogname"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="email"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_below="@id/tv_dialogemail"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_chat"
+                    android:layout_width="100sp"
+                    android:layout_height="wrap_content"
+                    android:text="채팅하기"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:background="#ffffff">
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_dialogprofile"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="50sp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/profileimage_layout"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/no_profile" />
+
+</RelativeLayout>

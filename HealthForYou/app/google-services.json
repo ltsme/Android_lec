@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1065816323542",
+    "firebase_url": "https://healthforyou-38566.firebaseio.com",
+    "project_id": "healthforyou-38566",
+    "storage_bucket": "healthforyou-38566.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1065816323542:android:ec27dffb30394d6b",
+        "android_client_info": {
+          "package_name": "com.example.nam.healthforyou"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1065816323542-f3p7cpisgrndn39djockvvceqamnfscd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYY6RxvmOBXnP1HIRYnwC-A533zpmDHz4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/ruleforuse1"
+                android:layout_width="300sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:layout_margin="10sp"
+                android:text="@string/ruleforuse1"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/ruleforuse2"
+                android:layout_width="300sp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:text="@string/ruleforuse2"
+                android:layout_marginTop="10sp"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/ruleforuse3"
+                android:layout_width="300sp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:text="@string/ruleforuse3"
+                android:layout_marginTop="10sp"
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="동의" />
+
+        <Button
+            android:id="@+id/notaccept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:text="동의 안함" />
+
+    </LinearLayout>
+
+</LinearLayout>

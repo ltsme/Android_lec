@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CalculationLayout</string>
+    <string name="number">123,456,789</string>
+</resources>

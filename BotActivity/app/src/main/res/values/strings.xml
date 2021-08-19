@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BotActivity</string>
+    <string name="title_home">연락처</string>
+    <string name="title_dashboard">연락처 추가</string>
+    <string name="title_notifications">Do</string>
+
+</resources>

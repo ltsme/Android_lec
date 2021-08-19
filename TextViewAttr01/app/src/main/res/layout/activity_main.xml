@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="---수평 입력 길이---"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Normal"
+        />
+<!--    스크롤바 보일지 안보일지 여부-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        />
+<!--한줄 넘으면 ... 등으로 표시 (ellipsize 옵션으로 설정)-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:singleLine="true"
+        />
+<!--a,e,i,o,u만 입력 가능-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="aeiou"
+        android:digits="aeiou "
+        />
+<!--    number 양수, numberSigned 양수,음수, numberDecimal 양수 소수점-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1234"
+        android:inputType="numberDecimal"
+        />
+<!--비밀번호-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="password"
+        android:inputType="textPassword"
+        />
+<!--  EditText를 클릭하였을 때 텍스트 영역을 전체 선택된 상태-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="selectAllOnFocus"
+        android:selectAllOnFocus="true"
+        />
+<!--web, email, phone, map 등의 링크 설정-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="auto link text. https://www.naver.com naver hame page. aaa@bbb.com mail address. +82 10-0000-0000 phone number"
+        android:autoLink="web|email|phone"
+        />
+<!--그 외 텍스트 기본 속성-->
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="textview"
+        android:rotation="-4"
+        android:textSize="40dp"
+        android:textColor="#00ff00"
+        android:fontFamily="serif"
+        android:background="#0000ff"
+        android:textStyle="italic|bold" />
+</LinearLayout>

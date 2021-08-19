@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<!--shadow 속성의 활용-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shadow Text"
+        android:textSize="40dp"
+        android:textColor="#ffffff"
+        android:shadowColor="#0000ff"
+        android:shadowDx="3.0"
+        android:shadowDy="3.0"
+        android:shadowRadius="3.0"
+        android:textScaleX="1.5"
+        />
+<!--줄 간격 띄우기-->
+    <TextView
+        android:background="#ff0000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세. 대한 사람 대한으로 길이 보전 하세"
+        android:lineSpacingMultiplier="2.0"
+        />
+<!--계속 대문자-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="textCapCharacters"
+        android:textColorHint="#ff0000"
+        android:inputType="textCapCharacters"
+        />
+<!--    첫 글자만 대문자-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="textCapWords"
+        android:inputType="textCapWords"
+        />
+<!--    첫 글자만 대문자-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="textCapSentences"
+        android:inputType="textCapSentences"
+        />
+<!--    singleLine + ellipsize 속성의 활용-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세. 대한 사람 대한으로 길이 보전 하세"
+        android:singleLine="true"
+        android:ellipsize="start"
+        />
+
+</LinearLayout>

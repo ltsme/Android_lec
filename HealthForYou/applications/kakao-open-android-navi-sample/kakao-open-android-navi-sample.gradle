@@ -1,0 +1,28 @@
+evaluationDependsOn(':applications')
+
+dependencies {
+    compile project(':libraries:kakaonavi')
+
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    compile 'com.android.support:appcompat-v7:25.1.0'
+    compile 'com.android.support:design:25.1.0'
+    testCompile 'junit:junit:4.12'
+}
+
+def addPrefix(value) {
+    def result = value
+    if (project.defaultDeployPhase.toLowerCase() != 'release') {
+        result = project.defaultDeployPhase.toLowerCase() + "_" + result
+    }
+
+    println result
+    return result
+}
+
+def replaceString(file, fromString, toString) {
+    def updatedContent = file.getText('UTF-8').replaceAll(fromString, toString)
+    file.write(updatedContent, 'UTF-8')
+}

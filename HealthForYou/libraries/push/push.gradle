@@ -1,0 +1,17 @@
+evaluationDependsOn(':libraries')
+
+dependencies {
+    releaseCompile project(path: ':libraries:usermgmt', configuration: 'release')
+    debugCompile project(path: ':libraries:usermgmt', configuration: 'debug')
+
+    compile ("com.google.android.gms:play-services-gcm:$GOOGLE_PLAY_SERVICES_VERSION") {
+        exclude module: 'support-v4'
+    }
+    compile "com.google.firebase:firebase-messaging:$GOOGLE_PLAY_SERVICES_VERSION"
+    compile "com.google.firebase:firebase-core:$GOOGLE_PLAY_SERVICES_VERSION"
+    compile "com.google.android.gms:play-services-base:$GOOGLE_PLAY_SERVICES_VERSION"
+}
+
+project.afterEvaluate {
+    publish.shouldRunAfter ':libraries:usermgmt:publish'
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="170sp"
+    android:background="@drawable/layout_border_month"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/monthgraph"
+            android:layout_width="match_parent"
+            android:layout_height="146sp"
+            android:layout_marginTop="20sp"
+            android:paddingEnd="10sp"
+            android:paddingStart="10sp">
+
+        </com.github.mikephil.charting.charts.BarChart>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:paddingStart="10sp"
+            android:text="월 별 나의 심박수"
+            android:textSize="15sp" />
+    </FrameLayout>
+
+</LinearLayout>

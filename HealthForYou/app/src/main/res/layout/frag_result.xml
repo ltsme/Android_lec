@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/frameLayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/health_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="170sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true">
+
+            </android.support.v4.view.ViewPager>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutDots"
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:layout_alignBottom="@+id/frameLayout"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="false"
+        android:elevation="9dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/frameLayout"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/tvbtnstylerect"
+        android:padding="10sp"
+        android:text="나의 심박수 비교"
+        android:textSize="16sp" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/mybarchart"
+        android:layout_width="match_parent"
+        android:layout_height="300sp"
+        android:layout_below="@+id/textView19"
+        android:layout_marginTop="5sp">
+
+    </com.github.mikephil.charting.charts.BarChart>
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:text="*동일연령대, 동일성별의 평균"
+        android:layout_alignBaseline="@+id/textView19"
+        android:layout_alignBottom="@+id/textView19"
+        android:layout_toEndOf="@+id/textView19" />
+</RelativeLayout>

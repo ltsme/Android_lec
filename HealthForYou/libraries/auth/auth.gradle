@@ -1,0 +1,12 @@
+evaluationDependsOn(':libraries')
+
+dependencies {
+    releaseCompile project(path: ':libraries:s2', configuration: 'liteRelease')
+    debugCompile project(path: ':libraries:s2', configuration: 'liteDebug')
+
+    compile "com.android.support:support-fragment:$ANDROID_SUPPORT_LIB_VERSION"
+}
+
+project.afterEvaluate {
+    publish.shouldRunAfter ':libraries:s2:publish'
+}
